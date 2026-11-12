@@ -1,0 +1,235 @@
+@import "tailwindcss";
+
+/* The three screens the home hero is composed for, one by one. */
+@custom-variant phone (@media (width < 810px));
+@custom-variant tablet (@media (810px <= width < 1100px));
+@custom-variant desktop (@media (width >= 1100px));
+/* Below this width the six journey tabs no longer fit on one line, in any language. */
+@custom-variant rail (@media (width < 900px));
+
+@theme inline {
+  /* Typography: Geist for headings, Inter for body copy, IBM Plex Sans Arabic for Arabic. */
+  --font-sans: var(--font-body-stack);
+  --font-display: var(--font-display-stack);
+  --font-accent: var(--font-accent-stack);
+  --font-body: var(--font-body-stack);
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  /* Intlaka palette */
+  --color-surface: var(--ik-surface);
+  --color-mist: var(--ik-mist);
+  --color-ink: var(--ik-ink);
+  --color-ink-soft: var(--ik-ink-soft);
+  --color-slate: var(--ik-slate);
+  --color-muted: var(--ik-muted);
+  --color-line: var(--ik-line);
+  --color-brand: var(--ik-brand);
+  --color-brand-deep: var(--ik-brand-deep);
+  --color-brand-soft: var(--ik-brand-soft);
+  --color-night: var(--ik-night);
+  --color-night-soft: var(--ik-night-soft);
+  --color-silver: var(--ik-silver);
+  --color-fog: var(--ik-fog);
+  --color-danger: var(--ik-danger);
+
+  --animate-marquee: marquee var(--marquee-duration, 40s) linear infinite;
+  --animate-rise: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  --animate-orbit: orbit 30s linear infinite;
+}
+
+:root {
+  /* Monochrome only: pure neutrals with no warm or cool cast, and no hue anywhere. */
+  --ik-surface: #ffffff;
+  --ik-mist: #f4f4f4;
+  --ik-ink: #0a0a0a;
+  --ik-ink-soft: #2e2e2e;
+  --ik-slate: #525252;
+  --ik-muted: #6e6e6e;
+  --ik-line: #e2e2e2;
+  --ik-brand: #0a0a0a;
+  --ik-brand-deep: #000000;
+  --ik-brand-soft: #ececec;
+  --ik-night: #0a0a0a;
+  --ik-night-soft: #171717;
+  /* Text on night: silver for reading, fog for labels. */
+  --ik-silver: #d4d4d4;
+  --ik-fog: #a0a0a0;
+  --ik-danger: #0a0a0a;
+
+  --font-display-stack: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-body-stack: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  /* Bodoni Moda Italic, for the emphasized words of page titles. */
+  --font-accent-stack: var(--font-bodoni), ui-serif, Georgia, serif;
+
+  color-scheme: light;
+}
+
+/* Arabic: one family for everything, and no letter-spacing (it breaks joined letters). */
+:root:lang(ar) {
+  --font-display-stack: var(--font-arabic), var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-body-stack: var(--font-arabic), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-accent-stack: var(--font-arabic-serif), var(--font-arabic), serif;
+}
+:lang(ar) * {
+  letter-spacing: 0 !important;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before {
+    border-color: var(--ik-line);
+  }
+  html {
+    font-family: var(--font-body-stack);
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--ik-surface);
+    color: var(--ik-ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  /* Ink ring with a white halo, so focus shows on white and on night alike. */
+  :focus-visible {
+    outline: 2px solid var(--ik-ink);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #fff;
+  }
+  ::selection {
+    background: var(--ik-ink);
+    color: #fff;
+  }
+  [id] {
+    scroll-margin-top: 96px;
+  }
+}
+
+/* Type scale. Elegance comes from restraint: titles lead by contrast and space, not by size. */
+@utility type-hero {
+  font-family: var(--font-display-stack);
+  /* Follows the height of the window too, so the home hero fits on one screen. */
+  font-size: clamp(40px, min(4.3vw, 8.2svh), 66px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+  @media (width < 810px) {
+    font-size: min(10vw, 44px);
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+  }
+}
+@utility type-page {
+  font-family: var(--font-display-stack);
+  font-size: clamp(38px, 3.9vw, 56px);
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+  @media (width < 810px) {
+    font-size: min(9.4vw, 38px);
+    line-height: 1.16;
+    letter-spacing: -0.025em;
+  }
+}
+@utility type-section {
+  font-family: var(--font-display-stack);
+  font-size: clamp(28px, 2.5vw, 34px);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+  @media (width < 810px) {
+    font-size: 26px;
+    line-height: 1.22;
+    letter-spacing: -0.02em;
+  }
+}
+@utility type-feature {
+  font-family: var(--font-display-stack);
+  font-size: clamp(24px, 2vw, 28px);
+  font-weight: 400;
+  line-height: 1.24;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  @media (width < 810px) {
+    font-size: 23px;
+  }
+}
+/*
+ * Slightly larger than its surroundings: a Didone has a smaller x-height than Geist.
+ * The optical size stays low on purpose: at its display cut the hairlines vanish and the crossbar of a "t" disappears.
+ */
+@utility type-accent {
+  font-family: var(--font-accent-stack);
+  font-size: 1.04em;
+  font-style: italic;
+  font-weight: 500;
+  font-optical-sizing: none;
+  font-variation-settings: "opsz" 11;
+  letter-spacing: -0.03em;
+}
+
+/* Tablet: the home title sits alone on a centred axis. */
+@media (min-width: 810px) and (max-width: 1099.98px) {
+  .type-hero {
+    font-size: min(5.6vw, 60px);
+  }
+}
+
+/* French runs longer: this keeps the home title compact on phones. */
+@media (width < 810px) {
+  :lang(fr) .type-hero {
+    font-size: 9.2vw;
+  }
+}
+
+/* Arabic needs room for its ascenders and descenders, and has no italics. */
+:lang(ar) .type-hero,
+:lang(ar) .type-page {
+  line-height: 1.36;
+}
+:lang(ar) .type-section,
+:lang(ar) .type-feature {
+  line-height: 1.42;
+}
+:lang(ar) .type-accent {
+  font-style: normal;
+  font-weight: 700;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-marquee,
+  .animate-orbit,
+  .animate-rise {
+    animation: none;
+  }
+}
