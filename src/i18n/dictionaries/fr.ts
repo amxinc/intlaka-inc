@@ -11,7 +11,7 @@ const fr: Dictionary = {
     keywords: [
       "Intlaka",
       "groupe d'entreprises Maroc Jordanie",
-      "Ahmad Husban",
+      "Ahmad Al Husban",
       "AMX Tech",
       "Intlaka Real Estate",
       "JOE MOOD",
@@ -74,8 +74,8 @@ const fr: Dictionary = {
 
   countdown: {
     label: "Rose se lance dans",
-    date: "19 décembre 2026",
-    dateShort: "19 déc. 2026",
+    date: "28 décembre 2026",
+    dateShort: "28 déc. 2026",
     days: "Jours",
     hours: "Heures",
     minutes: "Minutes",
@@ -112,7 +112,7 @@ const fr: Dictionary = {
         name: "Rose",
         kind: "La mobilité sûre pour les femmes, par des femmes",
         text: "Des conductrices vérifiées, formées et salariées, le partage du trajet en direct et un bouton d'urgence. La sécurité pour la passagère comme pour la conductrice.",
-        status: "Lancement : 19 décembre 2026",
+        status: "Lancement : 28 décembre 2026",
         link: "Découvrir Rose",
       },
       hera: {
@@ -272,7 +272,7 @@ const fr: Dictionary = {
     apps: {
       tag: "Les applications",
       title: "Des applications pour protéger, guider et simplifier",
-      text: "Rose se lance le 19 décembre 2026. Hera et Mimi Pay arrivent bientôt.",
+      text: "Rose se lance le 28 décembre 2026. Hera et Mimi Pay arrivent bientôt.",
       all: "Voir toutes les applications",
     },
     projects: {
@@ -300,7 +300,7 @@ const fr: Dictionary = {
         {
           question: "Qu'est-ce qu'Intlaka ?",
           answer:
-            "Intlaka est un groupe d'entreprises entre le Maroc et la Jordanie, fondé par Ahmad Husban. Il est actif dans la technologie, la mobilité, la restauration et l'hospitalité, et l'immobilier. Chaque entreprise fonctionne de façon indépendante, avec une vision commune.",
+            "Intlaka est un groupe d'entreprises entre le Maroc et la Jordanie, fondé par Ahmad Al Husban. Il est actif dans la technologie, la mobilité, la restauration et l'hospitalité, et l'immobilier. Chaque entreprise fonctionne de façon indépendante, avec une vision commune.",
         },
         {
           question: "Quelles entreprises font partie du groupe ?",
@@ -314,7 +314,7 @@ const fr: Dictionary = {
         },
         {
           question: "Quand Rose se lance-t-elle ?",
-          answer: "Rose se lance le 19 décembre 2026. Hera, Hera City et Mimi Pay arrivent bientôt.",
+          answer: "Rose se lance le 28 décembre 2026. Hera, Hera City et Mimi Pay arrivent bientôt.",
         },
         {
           question: "Que signifie concrètement « Bâtir pour donner. Donner pour durer. » ?",
@@ -401,12 +401,12 @@ const fr: Dictionary = {
     meta: {
       title: "Applications",
       description:
-        "Les applications d'Intlaka : Rose, la mobilité sûre pour les femmes, par des femmes (lancement le 19 décembre 2026). Hera, un compagnon personnel de voyage et de loisirs. Mimi Pay, une application financière. Les données des utilisateurs sont hébergées au Maroc.",
+        "Les applications d'Intlaka : Rose, la mobilité sûre pour les femmes, par des femmes (lancement le 28 décembre 2026). Hera, un compagnon personnel de voyage et de loisirs. Mimi Pay, une application financière. Les données des utilisateurs sont hébergées au Maroc.",
     },
     hero: {
       tag: "Les applications",
       title: "Des applications qui résolvent de *vrais problèmes*",
-      subtitle: "Trois applications, conçues par Intlaka. Rose se lance le 19 décembre 2026. Hera et Mimi Pay arrivent bientôt.",
+      subtitle: "Trois applications, conçues par Intlaka. Rose se lance le 28 décembre 2026. Hera et Mimi Pay arrivent bientôt.",
     },
     rose: {
       tag: "Rose",
@@ -467,7 +467,7 @@ const fr: Dictionary = {
     meta: {
       title: "Rose, la mobilité sûre pour les femmes, par des femmes",
       description:
-        "Rose, c'est la mobilité sûre pour les femmes, par des femmes : des conductrices vérifiées, formées et salariées, le partage du trajet en direct et un bouton d'urgence. Lancement le 19 décembre 2026.",
+        "Rose, c'est la mobilité sûre pour les femmes, par des femmes : des conductrices vérifiées, formées et salariées, le partage du trajet en direct et un bouton d'urgence. Lancement le 28 décembre 2026.",
     },
     hero: {
       tag: "Rose, par Intlaka",
@@ -477,7 +477,7 @@ const fr: Dictionary = {
     },
     launch: {
       tag: "Le lancement",
-      title: "Rose se lance le 19 décembre 2026",
+      title: "Rose se lance le 28 décembre 2026",
       text: "Le compte à rebours a commencé.",
     },
     features: {
@@ -545,7 +545,7 @@ const fr: Dictionary = {
         },
         {
           question: "Quand Rose se lance-t-elle ?",
-          answer: "Rose se lance le 19 décembre 2026.",
+          answer: "Rose se lance le 28 décembre 2026.",
         },
         {
           question: "Qui conduit pour Rose ?",
@@ -837,13 +837,13 @@ const fr: Dictionary = {
     meta: {
       title: "À propos",
       description:
-        "Intlaka est un groupe d'entreprises entre le Maroc et la Jordanie, fondé par Ahmad Husban. Notre vision : chaque rêve mérite une plateforme pour s'envoler. Notre conviction : bâtir pour donner, donner pour durer.",
+        "Intlaka est un groupe d'entreprises entre le Maroc et la Jordanie, fondé par Ahmad Al Husban. Notre vision : chaque rêve mérite une plateforme pour s'envoler. Notre conviction : bâtir pour donner, donner pour durer.",
     },
     hero: {
       tag: "À propos d'Intlaka",
       title: "Chaque rêve mérite une plateforme *pour s'envoler*",
       subtitle:
-        "Intlaka est un groupe d'entreprises entre le Maroc et la Jordanie, fondé par Ahmad Husban. Il est actif dans la technologie, la mobilité, la restauration et l'hospitalité, et l'immobilier.",
+        "Intlaka est un groupe d'entreprises entre le Maroc et la Jordanie, fondé par Ahmad Al Husban. Il est actif dans la technologie, la mobilité, la restauration et l'hospitalité, et l'immobilier.",
     },
     story: {
       tag: "Notre vision",
@@ -859,22 +859,21 @@ const fr: Dictionary = {
     },
     founder: {
       tag: "Le fondateur",
-      title: "Fondé par Ahmad Husban",
-      name: "Ahmad Husban",
-      role: "Fondateur d'Intlaka",
-      bio: "Ahmad Husban a fondé Intlaka comme un groupe d'entreprises entre le Maroc et la Jordanie, avec une idée : bâtir des entreprises qui résolvent de vrais problèmes, et ouvrir la porte à celles et ceux qui ont le talent pour les construire.",
+      title: "Fondé par Ahmad Al Husban",
+      name: "Ahmad Al Husban",
+      role: "Fondateur et propriétaire d'Intlaka",
+      bio: "Ahmad Al Husban est aussi cofondateur de Husban Real Estate (شركة حسبان للعقار).",
     },
     team: {
       tag: "L'équipe",
       title: "Celles et ceux qui bâtissent Intlaka",
       text: "Nous sommes une famille avant d'être une entreprise.",
       people: [
-        { id: "member-1", name: "Salma Bennani", role: "Produit" },
-        { id: "member-2", name: "Youssef El Idrissi", role: "Technologie" },
-        { id: "member-3", name: "Lina Haddad", role: "Opérations" },
-        { id: "member-4", name: "Omar Tahiri", role: "Design" },
-        { id: "member-5", name: "Nour Khalil", role: "Équipes et culture" },
-        { id: "member-6", name: "Karim Mansouri", role: "Partenariats" },
+        { id: "ayoub", name: "Ayoub Hayda", role: "Ingénieur logiciel, Directeur de l'ingénierie" },
+        { id: "sarah", name: "Sarah Fallahi", role: "Ingénierie logicielle, application Rose" },
+        { id: "khouloud", name: "Khouloud serhani", role: "Ingénierie logicielle, application Rose" },
+        { id: "amine", name: "Amine Niouer", role: "Marketing digital, département marketing" },
+        { id: "khaoula", name: "KHAOULA LAIQ", role: "Marketing, en charge du B2B" },
       ],
     },
     family: {

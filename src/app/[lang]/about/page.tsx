@@ -73,7 +73,7 @@ export default async function AboutPage() {
       <Section id="team">
         <SectionHeader tag={a.founder.tag} title={a.founder.title} />
         <Reveal className="w-full">
-          <PersonCard id="founder" name={a.founder.name} role={a.founder.role} bio={a.founder.bio} />
+          <PersonCard id="ahmad" name={a.founder.name} role={a.founder.role} bio={a.founder.bio} />
         </Reveal>
       </Section>
 

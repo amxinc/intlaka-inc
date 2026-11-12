@@ -7,16 +7,19 @@ export const siteConfig = {
   name: "Intlaka",
 
   /** Public URL of the website, without a trailing slash. Used for SEO (canonical URLs, sitemap, social cards). */
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://intlaka.com").replace(/\/+$/, ""),
+  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://intlaka.com").replace(
+    /\/+$/,
+    "",
+  ),
 
   contact: {
     email: "contact@intlaka.com",
   },
 
-  founder: "Ahmad Husban",
+  founder: "Ahmad Al Husban",
 
-  /** Rose launch: 19 December 2026, midnight in Morocco (UTC+1). The countdowns run to this instant. */
-  roseLaunch: "2026-12-19T00:00:00+01:00",
+  /** Rose launch: 28 December 2026, midnight in Morocco (UTC+1). The countdowns run to this instant. */
+  roseLaunch: "2026-12-28T00:00:00+01:00",
 
   /** Full URLs of the social profiles. */
   social: {
@@ -46,5 +49,9 @@ export const socialLabels: Record<SocialNetwork, string> = {
 export function configuredSocials() {
   return (Object.keys(siteConfig.social) as SocialNetwork[])
     .filter((network) => siteConfig.social[network])
-    .map((network) => ({ network, label: socialLabels[network], href: siteConfig.social[network] }));
+    .map((network) => ({
+      network,
+      label: socialLabels[network],
+      href: siteConfig.social[network],
+    }));
 }

@@ -46,9 +46,8 @@ pnpm lint
 
 ### Team
 
-The team on the About page is a placeholder: the names are invented and every photo is the same
-silhouette. Before going live, replace each person in the three dictionaries and map their photo in
-`src/content/team.ts` (the file explains how).
+The team on the About page is the real team. To add or change someone, put the photo in `src/assets/team`,
+map it to an id in `src/content/team.ts`, and set the name and role under the same id in the three dictionaries.
 
 ### Content rules
 
@@ -56,7 +55,7 @@ silhouette. Before going live, replace each person in the three dictionaries and
 - No statistics or numbers other than Rose's permanent 10%.
 - No partner, vehicle brand, fleet size, hotel, city launch, event or plan that Intlaka has not announced.
 - No "first", "only" or "largest".
-- Rose "launches" on 19 December 2026. Hera, Hera City and Mimi Pay are "coming soon". Research projects have no dates.
+- Rose "launches" on 28 December 2026. Hera, Hera City and Mimi Pay are "coming soon". Research projects have no dates.
 - The single public contact is contact@intlaka.com. No other email and no phone number.
 
 ### Contact form

@@ -27,7 +27,7 @@ export function Hero({ locale, t }: { locale: Locale; t: Pick<Dictionary, "home"
         <PointField />
         <HorizonGlow />
         <div className="flex w-full max-w-[1400px] flex-1 flex-col px-8 pt-[132px] desktop:pt-[108px] desktop:pb-9 phone:px-5 phone:pt-[108px]">
-          <div className="relative grid flex-1 content-center items-center justify-items-center gap-x-14 pb-[72px] desktop:grid-cols-[1.1fr_1fr] desktop:justify-items-stretch desktop:pb-10 phone:pb-12">
+          <div className="relative grid flex-1 content-center items-center justify-items-center gap-x-14 pb-[72px] desktop:grid-cols-[1.1fr_1fr] desktop:justify-items-stretch desktop:pb-10 phone:pb-9">
             <div className="flex flex-col items-center text-center desktop:items-start desktop:text-start">
               <SectionTag dark>{hero.tag}</SectionTag>
               <h1 className="type-hero mt-6 max-w-[680px] tablet:max-w-[760px] phone:mt-5">

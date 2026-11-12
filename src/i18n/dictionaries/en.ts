@@ -11,7 +11,7 @@ const en = {
     keywords: [
       "Intlaka",
       "group of companies Morocco Jordan",
-      "Ahmad Husban",
+      "Ahmad Al Husban",
       "AMX Tech",
       "Intlaka Real Estate",
       "JOE MOOD",
@@ -74,8 +74,8 @@ const en = {
 
   countdown: {
     label: "Rose launches in",
-    date: "19 December 2026",
-    dateShort: "19 Dec 2026",
+    date: "28 December 2026",
+    dateShort: "28 Dec 2026",
     days: "Days",
     hours: "Hours",
     minutes: "Minutes",
@@ -113,7 +113,7 @@ const en = {
         name: "Rose",
         kind: "Safe mobility for women, by women",
         text: "Verified, trained and employed women drivers, live trip sharing and an emergency button. Safety for the rider and the driver alike.",
-        status: "Launch: 19 December 2026",
+        status: "Launch: 28 December 2026",
         link: "Discover Rose",
       },
       hera: {
@@ -273,7 +273,7 @@ const en = {
     apps: {
       tag: "The apps",
       title: "Apps made to protect, guide and simplify",
-      text: "Rose launches on 19 December 2026. Hera and Mimi Pay are coming soon.",
+      text: "Rose launches on 28 December 2026. Hera and Mimi Pay are coming soon.",
       all: "See all apps",
     },
     projects: {
@@ -301,7 +301,7 @@ const en = {
         {
           question: "What is Intlaka?",
           answer:
-            "Intlaka is a group of companies between Morocco and Jordan, founded by Ahmad Husban. It works in technology, mobility, food and hospitality, and real estate. Each company runs independently, with one shared vision.",
+            "Intlaka is a group of companies between Morocco and Jordan, founded by Ahmad Al Husban. It works in technology, mobility, food and hospitality, and real estate. Each company runs independently, with one shared vision.",
         },
         {
           question: "Which companies are part of the group?",
@@ -315,7 +315,7 @@ const en = {
         },
         {
           question: "When does Rose launch?",
-          answer: "Rose launches on 19 December 2026. Hera, Hera City and Mimi Pay are coming soon.",
+          answer: "Rose launches on 28 December 2026. Hera, Hera City and Mimi Pay are coming soon.",
         },
         {
           question: "What does \"Build to Give. Give to Last.\" mean in practice?",
@@ -401,13 +401,13 @@ const en = {
     meta: {
       title: "Apps",
       description:
-        "Intlaka's apps: Rose, safe mobility for women, by women (launch on 19 December 2026). Hera, a personal travel and leisure companion. Mimi Pay, a financial app. User data is hosted in Morocco.",
+        "Intlaka's apps: Rose, safe mobility for women, by women (launch on 28 December 2026). Hera, a personal travel and leisure companion. Mimi Pay, a financial app. User data is hosted in Morocco.",
     },
     hero: {
       tag: "The apps",
       title: "Apps that solve *real problems*",
       subtitle:
-        "Three apps, built by Intlaka. Rose launches on 19 December 2026. Hera and Mimi Pay are coming soon.",
+        "Three apps, built by Intlaka. Rose launches on 28 December 2026. Hera and Mimi Pay are coming soon.",
     },
     rose: {
       tag: "Rose",
@@ -468,7 +468,7 @@ const en = {
     meta: {
       title: "Rose, safe mobility for women, by women",
       description:
-        "Rose is safe mobility for women, by women: verified, trained and employed women drivers, live trip sharing and an emergency button. Rose launches on 19 December 2026.",
+        "Rose is safe mobility for women, by women: verified, trained and employed women drivers, live trip sharing and an emergency button. Rose launches on 28 December 2026.",
     },
     hero: {
       tag: "Rose, by Intlaka",
@@ -478,7 +478,7 @@ const en = {
     },
     launch: {
       tag: "The launch",
-      title: "Rose launches on 19 December 2026",
+      title: "Rose launches on 28 December 2026",
       text: "The countdown has started.",
     },
     features: {
@@ -546,7 +546,7 @@ const en = {
         },
         {
           question: "When does Rose launch?",
-          answer: "Rose launches on 19 December 2026.",
+          answer: "Rose launches on 28 December 2026.",
         },
         {
           question: "Who drives for Rose?",
@@ -838,13 +838,13 @@ const en = {
     meta: {
       title: "About",
       description:
-        "Intlaka is a group of companies between Morocco and Jordan, founded by Ahmad Husban. Our vision: every dream deserves a platform to take off. Our belief: Build to Give. Give to Last.",
+        "Intlaka is a group of companies between Morocco and Jordan, founded by Ahmad Al Husban. Our vision: every dream deserves a platform to take off. Our belief: Build to Give. Give to Last.",
     },
     hero: {
       tag: "About Intlaka",
       title: "Every dream deserves a platform *to take off*",
       subtitle:
-        "Intlaka is a group of companies between Morocco and Jordan, founded by Ahmad Husban. It works in technology, mobility, food and hospitality, and real estate.",
+        "Intlaka is a group of companies between Morocco and Jordan, founded by Ahmad Al Husban. It works in technology, mobility, food and hospitality, and real estate.",
     },
     story: {
       tag: "Our vision",
@@ -860,23 +860,21 @@ const en = {
     },
     founder: {
       tag: "The founder",
-      title: "Founded by Ahmad Husban",
-      name: "Ahmad Husban",
-      role: "Founder of Intlaka",
-      bio: "Ahmad Husban founded Intlaka as a group of companies between Morocco and Jordan, with one idea: build companies that solve real problems, and open the door for the people who have the talent to build them.",
+      title: "Founded by Ahmad Al Husban",
+      name: "Ahmad Al Husban",
+      role: "Founder and owner of Intlaka",
+      bio: "Ahmad Al Husban is also a co-founder of Husban Real Estate (شركة حسبان للعقار).",
     },
     team: {
       tag: "The team",
       title: "The people who build Intlaka",
       text: "We are a family before we are a company.",
-      // Placeholder people: replace the names and roles here, and the photos in src/content/team.ts.
       people: [
-        { id: "member-1" as const, name: "Salma Bennani", role: "Product" },
-        { id: "member-2" as const, name: "Youssef El Idrissi", role: "Technology" },
-        { id: "member-3" as const, name: "Lina Haddad", role: "Operations" },
-        { id: "member-4" as const, name: "Omar Tahiri", role: "Design" },
-        { id: "member-5" as const, name: "Nour Khalil", role: "People and culture" },
-        { id: "member-6" as const, name: "Karim Mansouri", role: "Partnerships" },
+        { id: "ayoub" as const, name: "Ayoub Hayda", role: "Software engineer, Head of Engineering" },
+        { id: "sarah" as const, name: "Sarah Fallahi", role: "Software engineer, Rose app" },
+        { id: "khouloud" as const, name: "Khouloud serhani", role: "Software engineer, Rose app" },
+        { id: "amine" as const, name: "Amine Niouer", role: "Digital marketer, marketing department" },
+        { id: "khaoula" as const, name: "KHAOULA LAIQ", role: "Marketing, in charge of B2B" },
       ],
     },
     family: {
